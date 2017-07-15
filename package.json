@@ -1,7 +1,7 @@
 {
-  "name": "create-vue-app",
+  "name": "my-application",
   "version": "1.0.0",
-  "author": "Thibaut Mottet <thibaut.mottet@pupscan.com>",
+  "author": "name <name@mail.com>",
   "license": "WTFPL",
   "scripts": {
     "dev": "./node_modules/.bin/poi",
