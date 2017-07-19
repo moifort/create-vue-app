@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "name <name@mail.com>",
   "license": "WTFPL",
+  "main": "main.js",
   "scripts": {
     "dev": "./node_modules/.bin/poi",
     "build": "./node_modules/.bin/poi build"
