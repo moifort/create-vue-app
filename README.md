@@ -33,7 +33,7 @@ Hot reloading, developpement server, minification, uglification, scss compilatio
 ## How it's work
 
 * **POI** make all the boring work to have ready to start development environment. More information [here](https://poi.js.org/#/home)
-* `index.js` is the entry point the POI use to start application.
+* `main.js` is the entry point the POI use to start application.
 * `index.ejs` is the html template that POI use to inject the application. In this file you can make you import, change meta, etc.
 * `./style` folder contain all the SCSS style file. `bootstrap` contain all the scss file, `vendors` contain all the third library like fontawesom, chartjs, etc. All the file will be compiled and generate automatically. 
 * `./static` contains all the image or other static files. Images will be compressed automatically.
