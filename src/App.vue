@@ -17,6 +17,9 @@
                 <p>
                     <my-component></my-component>
                 </p>
+                <p>
+                    Fitler on numbers {{ '1982093832.09' | number(1, '$ ') }}
+                </p>
             </div>
         </section>
     </div>
