@@ -5,8 +5,9 @@
   "license": "WTFPL",
   "main": "main.js",
   "scripts": {
-    "dev": "./node_modules/.bin/poi",
-    "build": "./node_modules/.bin/poi build"
+    "dev": "poi",
+    "build": "poi build",
+    "fix": "xo --fix || true"
   },
   "dependencies": {
     "axios": "^0.16.2",
@@ -16,6 +17,11 @@
   "devDependencies": {
     "node-sass": "^4.5.3",
     "poi": "^9.1.2",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^6.0.6",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": true
   }
 }

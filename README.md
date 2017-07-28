@@ -25,8 +25,10 @@ Hot reloading, developpement server, minification, uglification, scss compilatio
 ## Tools and libraries
 
 * [POI](https://github.com/egoist/poi) to prepare and set the project ready for developpement (dev server, hot reloading, minification, uglyfication...).
+* [xo](https://github.com/sindresorhus/xo) very fast style linter
 * Abviously [VueJs 2](https://vuejs.org/v2/guide/)
 * [Bootstrap 4](https://v4-alpha.getbootstrap.com) using [SCSS](http://sass-lang.com)
+* [font-awesome](http://fontawesome.io) for icons
 * [Axios](https://github.com/mzabriskie/axios) for http resources
 * [Vuex](https://github.com/vuejs/vuex) for centralized state management using flux pattern all the explanation [here](https://vuex.vuejs.org/en/)
 * Docker for deployement
@@ -35,6 +37,7 @@ Hot reloading, developpement server, minification, uglification, scss compilatio
 ## How it's work
 
 * **POI** make all the boring work to have ready to start development environment. More information [here](https://poi.js.org/#/home)
+* To automatically fix your syntax error run `yarn fix` and finish to fix the error that xo cannot fix. You can configure the rule in `package.json`
 * `main.js` is the entry point the POI use to start application.
 * `index.ejs` is the html template that POI use to inject the application. In this file you can make you import, change meta, etc.
 * `./style` folder contain all the SCSS style file. `bootstrap` contain all the scss file, `vendors` contain all the third library like fontawesom, chartjs, etc. All the file will be compiled and generate automatically. 
