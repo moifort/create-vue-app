@@ -9,6 +9,7 @@
     "build": "./node_modules/.bin/poi build"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "vue": "^2.4.1"
   },
   "devDependencies": {

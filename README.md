@@ -27,6 +27,7 @@ Hot reloading, developpement server, minification, uglification, scss compilatio
 * [POI](https://github.com/egoist/poi) to prepare and set the project ready for developpement (dev server, hot reloading, minification, uglyfication...).
 * Abviously [VueJs 2](https://vuejs.org/v2/guide/)
 * [Bootstrap 4](https://v4-alpha.getbootstrap.com) using [SCSS](http://sass-lang.com)
+* [Axios](https://github.com/mzabriskie/axios) for http resources
 * Docker for deployement
 * [http-server](https://github.com/indexzero/http-server) fast/easy http server for production
 

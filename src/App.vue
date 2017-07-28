@@ -8,6 +8,8 @@
                     <a href="#" class="btn btn-primary">This is...</a>
                     <a href="#" class="btn btn-secondary">...awesome</a>
                 </p>
+                <p>My request HTTP with Axios, result: <br><code>{{ request }}</code></p>
+
                 <p>
                     <my-component></my-component>
                 </p>
@@ -18,11 +20,18 @@
 
 <script>
     import MyComponent from './component/MyComponent'
+    import api from './api'
 
     export default {
         name: 'dashboard',
         components: {
             MyComponent
+        },
+        data: () => ({
+            request: {}
+        }),
+        created() {
+            api.myRequest().then(result => this.request = result)
         }
     }
 </script>
