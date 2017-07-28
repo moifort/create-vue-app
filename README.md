@@ -28,6 +28,7 @@ Hot reloading, developpement server, minification, uglification, scss compilatio
 * Abviously [VueJs 2](https://vuejs.org/v2/guide/)
 * [Bootstrap 4](https://v4-alpha.getbootstrap.com) using [SCSS](http://sass-lang.com)
 * [Axios](https://github.com/mzabriskie/axios) for http resources
+* [Vuex](https://github.com/vuejs/vuex) for centralized state management using flux pattern all the explanation [here](https://vuex.vuejs.org/en/)
 * Docker for deployement
 * [http-server](https://github.com/indexzero/http-server) fast/easy http server for production
 
@@ -39,6 +40,8 @@ Hot reloading, developpement server, minification, uglification, scss compilatio
 * `./style` folder contain all the SCSS style file. `bootstrap` contain all the scss file, `vendors` contain all the third library like fontawesom, chartjs, etc. All the file will be compiled and generate automatically. 
 * `./static` contains all the image or other static files. Images will be compressed automatically.
 * `./src` all your VueJs files.
+* `./src/api` all your call to your external API manage with Axios
+* `./src/store` your Vuex centralized state management will store all your application data
 * To see what looks your project in production mode run `yarn build`. It will generate aggregate minified file: css, javascripts.
 
 ## Deploy your application in production with Docker
@@ -47,8 +50,14 @@ Hot reloading, developpement server, minification, uglification, scss compilatio
 * When finish run `docker run -p 8080:8080 [image id previously build]`
 * Go to http://localhost:8080, your website 
 
-## Configure your IntelliJ
+## Configure your tools
+
+### IntelliJ
 
 * Set the JavaScript version: **Preference > Language & Framework > JavaScript**, select `ECMAScript 6`
 * Remove semicolon: **Preference > Editor > Code Style > JavaScript > Punctuation**, select `Don't use`
 * Install docker, vuejs, ejs plugins
+
+### Chrome
+
+* To use all the Vuejs dev experience install chrome extension [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)

@@ -8,8 +8,12 @@
                     <a href="#" class="btn btn-primary">This is...</a>
                     <a href="#" class="btn btn-secondary">...awesome</a>
                 </p>
-                <p>My request HTTP with Axios, result: <br><code>{{ request }}</code></p>
-
+                <p>My request HTTP with Axios, result:
+                    <br>
+                    <loader :status="status">
+                        <code>{{ requestData }}</code>
+                    </loader>
+                </p>
                 <p>
                     <my-component></my-component>
                 </p>
@@ -19,19 +23,24 @@
 </template>
 
 <script>
-    import MyComponent from './component/MyComponent'
-    import api from './api'
+    import MyComponent from './components/MyComponent'
+    import Loader from './components/Loader'
+    import {mapGetters} from 'vuex'
 
     export default {
         name: 'dashboard',
         components: {
-            MyComponent
+            MyComponent,
+            Loader
         },
-        data: () => ({
-            request: {}
-        }),
+        computed: {
+            ...mapGetters({
+                requestData: 'requestData',
+                status: 'requestDataStatus'
+            })
+        },
         created() {
-            api.myRequest().then(result => this.request = result)
+            this.$store.dispatch('fetchRequestData')
         }
     }
 </script>
