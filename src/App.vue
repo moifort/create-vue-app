@@ -26,8 +26,8 @@
 </template>
 
 <script>
-    import MyComponent from './components/MyComponent'
-    import Loader from './components/Loader'
+    import MyComponent from './components/MyComponent.vue'
+    import Loader from './components/Loader.vue'
     import {mapGetters} from 'vuex'
 
     export default {
