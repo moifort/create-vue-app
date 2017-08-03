@@ -46,7 +46,7 @@ Hot reloading, developpement server, minification, uglification, scss compilatio
 * `./src` all your VueJs files.
 * `./src/api` all your call to your external API manage with Axios
 * `./src/store` your Vuex centralized state management will store all your application data
-* `./src/router` your router to manage page, entry point is `index.ejs` the component will be loaded in `<router-view></router-view>`
+* `./src/router` your router to manage pages, all your page will be load on start of application: see `render: h => h('router-view')` in `main.js` file
 * To see what looks your project in production mode run `yarn build`. It will generate aggregate minified file: css, javascripts.
 
 ## Deploy your application in production with Docker

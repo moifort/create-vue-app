@@ -20,6 +20,9 @@
                 <p>
                     Fitler on numbers {{ '1982093832.09' | number(1, '$ ') }}
                 </p>
+                <p>
+                    <a href="/should-be-not-here">Change the url to see vue router in action</a>
+                </p>
             </div>
         </section>
     </div>
