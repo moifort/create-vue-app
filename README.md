@@ -22,6 +22,17 @@ Hot reloading, developpement server, minification, uglification, scss compilatio
 * Set meta data `title` in `index.ejs`
 * Modify your favicon in `./static/img/favicon.png`
 
+## Deploy your application in production with Docker
+
+* In the project folder run `docker build .`
+* When finish run `docker run -p 8080:8080 [image id previously build]`
+* Go to http://localhost:8080, your website 
+
+**OR**
+
+* In the project folder run `docker-compose up -d`
+* Go to http://localhost:80, your website 
+
 ## Tools and libraries
 
 * [POI](https://github.com/egoist/poi) to prepare and set the project ready for developpement (dev server, hot reloading, minification, uglyfication...).
@@ -48,12 +59,6 @@ Hot reloading, developpement server, minification, uglification, scss compilatio
 * `./src/store` your Vuex centralized state management will store all your application data
 * `./src/router` your router to manage pages, all your page will be load on start of application: see `render: h => h('router-view')` in `main.js` file
 * To see what looks your project in production mode run `yarn build`. It will generate aggregate minified file: css, javascripts.
-
-## Deploy your application in production with Docker
-
-* In the project folder run `docker build .`
-* When finish run `docker run -p 8080:8080 [image id previously build]`
-* Go to http://localhost:8080, your website 
 
 ## Configure your tools
 

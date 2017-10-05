@@ -1,5 +1,5 @@
 FROM kkarczmarczyk/node-yarn:latest
-MAINTAINER thibaut.mottet@pupscan.fr
+MAINTAINER thibaut.mottet@gmail.com
 
 RUN yarn global add http-server
 
